@@ -1,0 +1,385 @@
+/* Font Family */
+@font-face {
+  font-family: lato-regular;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: philosopher-bold;
+  src: url(../fonts/Philosopher-Bold.ttf);
+}
+
+@font-face {
+  font-family: philosopher-regular;
+  src: url(../fonts/Philosopher-Regular.ttf);
+}
+
+/* xxx Font Family xxx */
+/* Color Variables */
+:root {
+  --white: #ffff;
+}
+
+/* xxx Color Variables xxx */
+/* TopBar */
+.topbar {
+
+  padding: 0 15px 0;
+  margin: 0 auto;
+  background: #8a9535;
+
+}
+
+.topbar::after {
+  width: 100%;
+  height: 50px;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(../images/top_bar_back.png);
+  background-repeat: repeat-x;
+  background-position: left, right;
+
+}
+
+.topbar {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--white);
+  font-family: lato-regular;
+  font-weight: 400;
+}
+
+.topbar .topbar-item {
+  padding: 12px 12px 12px 0;
+}
+
+.topbar i {
+  padding-right: 10px
+}
+
+.topbar button {
+  transition: all 0.2s ease-in;
+  font-size: 18px !important;
+
+  font-family: philosopher-bold !important;
+  background: #F79D05;
+  padding-left: 35px;
+  padding-right: 35px;
+  color: white;
+  letter-spacing: 0.3px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.topbar button:hover {
+  background: #a1ab57 !important;
+}
+
+/* NavBar */
+.myheader .container {
+  padding: 18px 15px !important;
+}
+
+.myheader i {
+  color: black !important;
+}
+
+.navbar .navbar-brand img {
+  max-width: 195px;
+}
+
+
+.navbar .navbar-nav .nav-item .nav-link {
+  font-size: 20px;
+  color: black !important;
+  padding: 15px 15px;
+  font-family: philosopher-regular;
+  transition: color 300ms ease-in-out;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link:hover {
+  color: #8a9535;
+}
+
+.bg-dark {
+  background: white !important;
+}
+
+.navbar-toggler {
+  background: #F79D05;
+
+}
+
+/* Banner */
+.banner {
+
+  background-image: url(../images/bg_school-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+
+}
+
+.banner .container {
+  padding: 130px 50px;
+}
+
+.banner .imagearea img {
+  height: 70px;
+
+}
+
+.banner .banner-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.banner .banner-content h1 {
+  font-size: 66px;
+  line-height: 66px;
+  font-family: philosopher-bold;
+
+}
+
+.banner .banner-content p {
+  font-size: 16px;
+  line-height: 32px;
+  font-family: philosopher-bold;
+  margin-bottom: 30px;
+
+}
+
+.banner .banner-content button {
+  padding: 20px 30px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: 17px;
+  line-height: 17px;
+  color: white;
+  font-family: lato-regular;
+}
+
+.banner .banner-content .learn-more {
+  background: #f79d05;
+  margin-right: 40px;
+}
+
+.banner .banner-content .learn-more:hover {
+  background: #E29006;
+}
+
+.banner .banner-content .join-classes {
+  background: #8A9535;
+}
+
+.banner .banner-content .join-classes:hover {
+  background: #818A32;
+}
+/* xxx Banner xxx */
+
+/* Prayer Timings */
+.prayer .container{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.prayer h2{
+  font-size: 48px!important;
+  font-weight: bold!important;
+  color: #222222!important;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: philosopher-bold;
+}
+.prayer h4{
+  font-size: 24px!important;
+  color: #b23a00!important;
+  margin-bottom: 20px;
+  font-family: philosopher-regular;
+  padding: 5px 0 0px;
+  
+
+}
+.prayer p{
+  line-height: 1.7em;
+  font-size: 15px;
+  line-height: 26px;
+  font-family: lato-regular;
+  color: #222222;
+  margin-bottom: 20px;
+}
+.prayer .aai{
+  padding: 17px 35px;
+  border: 0px;
+  outline: none;
+  background: #818A32;
+  color: white;
+  border-radius: 3px;
+}
+.prayer .aai:hover{
+  background: #F79D05;
+}
+.prayer .innerbox{
+  background: #ffffff;
+    border-top-left-radius: 25px;
+    padding-bottom: 35px;
+    -webkit-box-shadow: 0px 0px 35px -21px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 0px 35px -21px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 35px -21px rgba(0, 0, 0, 0.7);
+    height: 100%;
+}
+.prayer .innerbox .heading{
+  background-color: #b23a00;
+    text-align: center;
+    padding: 25px 0;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 15px;
+    line-height: 26px;
+    font-family: philosopher-bold;
+    color: white;
+    
+}
+.prayer .prayers-timing{
+  margin: 35px 0;
+  padding: 0 25px;
+  text-align: center;
+  color: black;
+ 
+
+}
+.prayer .prayers-timing h6{
+  font-size: 15px;
+  line-height: 22px;
+  font-family: lato-regular;
+}
+.prayer .prayers-timing span{
+  color: #8a9536;
+}
+.prayer .all-timings{
+  padding: 5px 80px;
+ 
+}
+.grey-color{
+  background: #F0F0F0;
+}
+.white-color{
+  background: white;
+}
+.prayer .all-timings i{
+  color: #a1ab57;
+  margin-right: 20px;
+}
+.prayer .all-timings .bold{
+  font-weight: bold;
+}
+/* Islamic service center */
+.islamic-center{
+  height: 100vh;
+  background-image: url(../images/bg2-1-1.png);
+  background-size: contain;
+  background-position: center top;
+}
+.islamic-center .container{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.islamic-center .container h2{
+  font-size: 48px;
+  line-height: 48px;
+  color: #222222;
+  font-family: philosopher-bold;
+  margin-bottom: 20px;
+}
+.islamic-center .container p{
+  font-size: 24px;
+  line-height: 26px;
+  font-family: philosopher-regular;
+  color: #b23a00;
+}
+.islamic-center .subbox .textarea{
+  padding: 60px 35px 35px 35px;
+  
+}
+.islamic-center .subbox .textarea h5{
+  font-size: 22px;
+  line-height: 32px;
+  color: #222222;
+  font-family: philosopher-bold;
+}
+.islamic-center .subbox .textarea p{
+  font-size: 15px;
+  line-height: 26px;
+  color: #222222;
+  font-family: lato-regular;
+}
+.islamic-center .subbox .textarea a{
+  font-size: 14px;
+  line-height: 26px;
+  color: #b23a00;
+  font-family: lato-regular;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.islamic-center .subbox{
+background: #ffffff;
+    -webkit-box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+    box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+    transition: all .3s;
+    
+    margin-bottom: 30px;
+}
+.islamic-center .subbox:hover .textarea{
+  background: #8A9535;
+  
+ 
+}
+.islamic-center .subbox:hover h5{
+  color: white;
+ 
+}
+.islamic-center .subbox:hover p{
+  color: white;
+ 
+}
+.islamic-center .subbox:hover a{
+  color: white;
+  border-bottom: 2px solid white;
+ 
+}
+
+
+.islamic-center .circle{
+  width: 85px ;
+  height: 85px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+ padding-top: 25px;
+ display: none;
+ position: absolute;
+ top: 0;
+ left: 11%;
+ -webkit-box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+    box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+    transition: all .3s;
+
+}
+.islamic-center .circle i{
+  font-size: 36px;
+  color: #8A9535;
+}
+
+
+
+
+
